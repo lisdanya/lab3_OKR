@@ -39,6 +39,7 @@ h3 {
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 
@@ -254,6 +255,20 @@ header a {
 	display: block;
 	text-align: center;
 }
+.col-1 img, .col-2 img, .col-3 img{
+	margin-bottom: 10px;
+	/*border: 1px solid black;*/
+	overflow:hidden;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+}
+.col-1 img:hover, .col-2 img:hover, .col-3 img:hover{
+	 -webkit-transform: scale(1.07);
+	 -moz-transform: scale(1.07);
+	 -o-transform: scale(1.07);
+}
+
 
 /* Responsive starts here */
 
@@ -466,8 +481,4 @@ header a {
 		padding-left: 10px;
 	}
 
-/*	.show-menu img{*/
-/*		padding-right: 220px;*/
-/*	}*/
-/*}*/
 }
