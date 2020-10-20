@@ -449,6 +449,16 @@ header a {
 		right: 20px;
 		top: 20px;
 	}
+	.footer-text p{
+		margin: 0 auto;
+		padding-right: 10px;
+
+	}
+	.footer-text a{
+		margin: 0 auto;
+		padding-left: 10px;
+	}
+
 /*	.show-menu img{*/
 /*		padding-right: 220px;*/
 /*	}*/
