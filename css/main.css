@@ -255,10 +255,6 @@ header a {
 	text-align: center;
 }
 
-.show-menu img{
-	padding-left: 100px;
-}
-
 /* Responsive starts here */
 
 @media screen and (max-width: 1200px) {
@@ -299,15 +295,19 @@ header a {
 		width: 56px;
 		height: 72px;
 	}
+	.menu li {
+		 margin-right: 10px;
+		 margin-left: 10px;
+	}
 
 }
 
 @media screen and (max-width: 767px) {
-	.header{
-		padding-top: 10px;
-	}
 	body{
 		overflow-x:hidden;
+	}
+	.header{
+		padding-top: 10px;
 	}
 	.container {
 		width: 540px;
@@ -323,19 +323,20 @@ header a {
 		margin-left: auto;
 	}
 	.menu-open img{
+		/*position: fixed;*/
 		position: absolute;
-		top: 0;
-		left: 0;
-		padding-left: 200px;
+		right: 30px;
+		top: 25px;
 		height: 40px;
+		/*margin: auto;*/
 	}
 	.menu-open {
-		position: absolute;
+
 		top: 0;
 		right:  0;
 		width: 40px;
 		height: 40px;
-		
+
 	}
 	.offer h1 {
 		line-height: 1em;
@@ -384,7 +385,16 @@ header a {
 	.show-lil{
 		display: flex;
 	}
-
+	button{
+		padding: 0;
+		left: 0px;
+		bottom: 0px;
+		margin-left: auto;
+		right: 0px;
+		/*padding-left: auto;*/
+		float: left;
+		margin-top: 15px;
+	}
 }
 
 @media screen and (max-width: 575px) {
@@ -401,14 +411,12 @@ header a {
 	.offer p {
 		font-size: 50px;
 	}
-	.tel {
-		display: none;
-	}
 	.menu-open {
 		margin-left: auto;
 	}
 	.offer p {
 		font-size: 42px;
+		text-align: center;
 	}
 	.logo {
 		margin-bottom: 20px;
@@ -419,11 +427,28 @@ header a {
 	.col-1, .col-2{
 		display: none;
 	}
+	.btn{
+		margin: 0 auto;
+	}
+	.offer p {
+		margin-left: 0;
+		text-align: center;
+	}
+	button{
+		padding: 0;
+		left: 0px;
+		bottom: 0px;
+		margin-left: auto;
+		right: 0px;
+		/*padding-left: auto;*/
+		float: left;
+		margin-top: 15px;
+	}
 
-/*	.menu-open img{*/
-/*		padding-left: 180px;*/
-/*		height: 40px;*/
-/*	}*/
+	.menu-open img{
+		right: 20px;
+		top: 20px;
+	}
 /*	.show-menu img{*/
 /*		padding-right: 220px;*/
 /*	}*/
