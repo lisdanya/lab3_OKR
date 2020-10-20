@@ -75,7 +75,7 @@ header a {
 }
 
 .logo {
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 	width: 70px;
 	height: 90px;
 }
@@ -316,7 +316,8 @@ header a {
 		display: none;
 	}
 	.socials{
-		display: none;
+		margin-right: auto ;
+		margin-left: 20px ;
 	}
 	.menu-open {
 		display: block;
@@ -329,6 +330,11 @@ header a {
 		top: 25px;
 		height: 40px;
 		/*margin: auto;*/
+	}
+	.menu{
+		margin: 0;
+		width: 0;
+		height: 0;
 	}
 	.menu-open {
 
@@ -381,6 +387,7 @@ header a {
 	}
 	.show-menu{
 		display: block;
+		height: 220px;
 	}
 	.show-lil{
 		display: flex;
