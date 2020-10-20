@@ -116,6 +116,7 @@ header a {
 	height: 30px;
 	margin-right: auto;
 	margin-left: 2px;
+	border-radius: 20px;
 }
 .tel {
 	font-size: 17px;
@@ -201,8 +202,7 @@ header a {
 }
 
 .footer-text p {
-	margin-right: 67px;
-}
+	margin-right: auto;}
 
 .menu-open {
 	background: none;
@@ -269,7 +269,51 @@ header a {
 	 -o-transform: scale(1.07);
 }
 
+.faq{
+	margin: 0 auto;
+}
+#idTop {
+	cursor: pointer;
+	z-index: 1000;
 
+	width: 43px;
+	bottom: 35px;
+	right: 10px;
+	height: 43px;
+	line-height: 43px;
+	overflow: hidden;
+	position: fixed;
+	display: block;
+	text-align: center;
+	border-radius: 30px;
+	opacity: .6;
+	transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	/*position: fixed;*/
+	/*z-index: 50;*/
+	/*bottom: 0%;*/
+	/*right: 0%;*/
+	/*background: #7db9e8;*/
+	/*opacity: .6;*/
+	/*color: #fff;*/
+	/*padding: 10px;*/
+	/*margin: 5px 15px 15px 5px;*/
+	/*border-radius: 30px;*/
+}
+.arrow{
+	max-width: 43px;
+	max-height: 43px;
+}
+
+#idTop:hover {
+	opacity: 1;
+}
 /* Responsive starts here */
 
 @media screen and (max-width: 1200px) {
@@ -467,17 +511,24 @@ header a {
 		margin-top: 15px;
 	}
 
-	.menu-open img{
-		right: 20px;
-		top: 20px;
+
+	.footer-text{
+		margin: 0 auto;
+		max-width: 200px;
+		text-align: center;
 	}
 	.footer-text p{
+
 		margin: 0 auto;
 		padding-right: 10px;
-
 	}
+	.footer-text p:nth-child(1) {
+		margin-bottom: 5px;
+	}
+
 	.footer-text a{
 		margin: 0 auto;
+		margin-bottom: 5px;
 		padding-left: 10px;
 	}
 
