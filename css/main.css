@@ -8,7 +8,8 @@ url('../fonts/Sketch.ttf') format('truetype'), font-weight: normal;
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Anton', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Anton', sans-serif;*/
 	color: black;
 	font-size: 16px;
 }
@@ -88,6 +89,8 @@ header a {
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
 }
 .footer-text li a{
 	text-transform: uppercase;
@@ -249,11 +252,16 @@ header a {
 	display: block;
 	max-width: 100%;
 	margin: 0 auto;
+
 }
 
+.name{
+	margin-top: 15px;
+}
 .name, .price-new {
 	display: block;
 	text-align: center;
+
 }
 .col-1 img, .col-2 img, .col-3 img{
 	margin-bottom: 10px;
@@ -275,7 +283,6 @@ header a {
 #idTop {
 	cursor: pointer;
 	z-index: 1000;
-
 	width: 43px;
 	bottom: 35px;
 	right: 10px;
@@ -295,16 +302,6 @@ header a {
 	-ms-transform: scale(1);
 	-o-transform: scale(1);
 	transform: scale(1);
-	/*position: fixed;*/
-	/*z-index: 50;*/
-	/*bottom: 0%;*/
-	/*right: 0%;*/
-	/*background: #7db9e8;*/
-	/*opacity: .6;*/
-	/*color: #fff;*/
-	/*padding: 10px;*/
-	/*margin: 5px 15px 15px 5px;*/
-	/*border-radius: 30px;*/
 }
 .arrow{
 	max-width: 43px;
