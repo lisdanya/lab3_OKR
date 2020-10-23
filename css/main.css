@@ -55,7 +55,6 @@ ul, li {
 }
 
 
-
 .container {
 	width: 1170px;
 	/*позиционирование по центру*/
@@ -75,6 +74,7 @@ footer a{
 header a {
 	color: black;
 }
+
 
 .logo {
 	margin-bottom: 10px;
@@ -97,23 +97,30 @@ header a {
 	font-size: 14px;
 	letter-spacing: 0.1em;
 }
-.footer-text li a:hover{
-	border-bottom: 1px solid #000000;
-}
+
 .menu li a {
 	text-transform: uppercase;
 	font-size: 24px;
 	letter-spacing: 0.1em;
 }
 
-.menu li a:hover {
-	border-bottom: 1px solid black;
-}
+
 
 .menu li{
 	margin-right: 40px;
 }
+.menu a {
+	text-decoration: none;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s;
+}
 
+.menu a:hover {
+	background-size: 100% 2px;
+}
 .soc {
 	width: 30px;
 	height: 30px;
@@ -131,6 +138,7 @@ header a {
 	display: flex;
 	align-items: center;
 }
+
 
 .offer {
 	margin-top: 216px;
@@ -201,12 +209,16 @@ header a {
 	font-size: 15px;
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
-	padding: 114px 0
+	margin-top: 80px;
+	padding: 14px 0 50px
 }
 
 .footer-text p {
-	margin-right: auto;}
-
+	margin-right: auto;
+}
+.footer{
+	background-color: whitesmoke;
+}
 .menu-open {
 	background: none;
 	border: none;
@@ -272,11 +284,10 @@ header a {
 	-webkit-transition: all 0.5s ease-out;
 }
 .col-1 img:hover, .col-2 img:hover, .col-3 img:hover{
-	 -webkit-transform: scale(1.07);
-	 -moz-transform: scale(1.07);
-	 -o-transform: scale(1.07);
+	-webkit-transform: scale(1.07);
+	-moz-transform: scale(1.07);
+	-o-transform: scale(1.07);
 }
-
 .faq{
 	margin: 0 auto;
 }
@@ -303,19 +314,27 @@ header a {
 	-o-transform: scale(1);
 	transform: scale(1);
 }
+
 .arrow{
 	max-width: 43px;
 	max-height: 43px;
 }
-
 #idTop:hover {
 	opacity: 1;
 }
 /* Responsive starts here */
+.shipping{
+	padding-bottom: 14px;
+	font-size: 14px;
+	text-align: center;
+}
 
 @media screen and (max-width: 1200px) {
 	.container {
 		width: 1140px;
+	}
+	.shipping{
+		font-size: 14px;
 	}
 }
 
@@ -352,8 +371,8 @@ header a {
 		height: 72px;
 	}
 	.menu li {
-		 margin-right: 10px;
-		 margin-left: 10px;
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 
 }
@@ -458,6 +477,9 @@ header a {
 		float: left;
 		margin-top: 15px;
 	}
+	.shipping{
+		text-align: left;
+	}
 }
 
 @media screen and (max-width: 575px) {
@@ -507,12 +529,12 @@ header a {
 		float: left;
 		margin-top: 15px;
 	}
-
-
 	.footer-text{
-		margin: 0 auto;
-		max-width: 200px;
-		text-align: center;
+		font-size: 15px;
+		font-family: 'Open Sans', sans-serif;
+		display: flex;
+		margin-top: 40px;
+		padding: 24px 0 24px
 	}
 	.footer-text p{
 
@@ -529,4 +551,7 @@ header a {
 		padding-left: 10px;
 	}
 
+	.shipping{
+		display: none;
+	}
 }
